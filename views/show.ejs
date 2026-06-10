@@ -1,0 +1,91 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>post in detail</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h2>here is your post in detail</h2>
+    <h5> post id : <%= post.id %></h5>
+    <div class="posts">
+            <h3 class="user"> @<%= post.username %> </h3>
+            <h4 class="content"> <%= post.content %> </h4>
+            </div>
+            
+</body>
+</html> -->
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>See in Detail</h2>
+    <p>id:<%=post.id %></p>
+   <i> <h3>@<%=post.username%></h3></i>
+    <p>Content: <%=post.content %></p>
+</body>
+</html> --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Post</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-dark">
+    <div class="container">
+        <a href="/posts" class="navbar-brand">
+             Threads
+        </a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <div class="compose-card">
+
+        <div class="id mb-3">
+           id-> <%= post.id %>
+        </div>
+
+        <div class="username mb-3">
+            @<%= post.username %>
+        </div>
+
+        <div class="content fs-4">
+            <%= post.content %>
+        </div>
+
+        <hr class="border-secondary">
+<div class="d-flex justify-content-between mt-4">
+
+    <a href="/posts/<%= post._id %>/edit"
+       class="btn btn-light">
+       Edit Post
+    </a>
+
+    <a href="/posts"
+       class="btn btn-outline-light">
+       ← Back
+    </a>
+
+</div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

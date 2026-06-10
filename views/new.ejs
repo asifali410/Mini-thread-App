@@ -1,0 +1,69 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Posts</title>
+</head>
+<body>
+    <h1>Create Your New Post</h1>
+    <form method="post" action="/posts">
+        <input type="text" placeholder="username" name="username">
+        <br><br>
+        <textarea placeholder="content" name="content"></textarea>
+        <br><br>
+        <button>submit post</button>
+    </form>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- <h1>Create you new post</h1>
+    <form method="post" action="/posts">
+        <input type="text" placeholder="enter username" name="username">
+        <br><br>
+        <textarea placeholder="content" name="content"></textarea>
+        <br><br>
+        <button>submit post</button>
+    </form> -->
+    <div class="container mt-4">
+  <h2>Create Post</h2>
+
+  <form action="/posts" method="POST">
+    <div class="mb-3">
+      <label class="form-label">Username</label>
+      <input
+        type="text"
+        name="username"
+        class="form-control"
+      >
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Content</label>
+      <textarea
+        name="content"
+        class="form-control"
+        rows="4"
+      ></textarea>
+    </div>
+
+    <button class="btn btn-success">
+      Create Post
+    </button>
+  </form>
+</div>
+</body>
+</html>

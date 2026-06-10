@@ -1,0 +1,147 @@
+/* h1{
+    color: rgba(0, 0, 0, 0.637);
+}
+ .posts{
+    background-color:lightgoldenrodyellow;
+ }
+ .user{
+    font-style: italic;
+ } */
+
+ 
+ body{
+    background:#000;
+    color:white;
+    font-family:Inter,sans-serif;
+}
+
+/* Navbar */
+
+.navbar{
+    background:#000 !important;
+    border-bottom:1px solid #222;
+}
+
+/* Feed Container */
+
+.feed{
+    max-width:650px;
+    margin:auto;
+}
+
+/* Post Cards */
+
+.post-card{
+    background:#111;
+    border:1px solid #222;
+    border-radius:18px;
+    padding:20px;
+    margin-bottom:16px;
+    transition:0.3s;
+}
+
+.post-card:hover{
+    background:#161616;
+}
+
+.username{
+    color:#fff;
+    font-weight:700;
+    font-size:18px;
+}
+
+.content{
+    color:#d9d9d9;
+    margin-top:8px;
+    font-size:17px;
+}
+
+/* Actions */
+
+.action-btn{
+    border:none;
+    background:none;
+    color:#888;
+    text-decoration:none;
+}
+
+.action-btn:hover{
+    color:white;
+}
+
+/* Floating Button */
+
+.new-post-btn{
+    margin-top: 4px;
+    margin-left: 430px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.delete-btn{
+    background:#dc3545;
+    border:none;
+    color:white;
+    border-radius:10px;
+    padding:6px 12px;
+}
+
+.delete-btn:hover{
+    background:#bb2d3b;
+}
+
+.feed{
+    max-width:700px;
+    margin:40px auto;
+}
+
+.post-card{
+    background:#111;
+    border:1px solid #222;
+    border-radius:20px;
+    padding:22px;
+    margin-bottom:20px;
+}
+
+.username{
+    font-size:18px;
+    font-weight:700;
+    color:white;
+}
+
+.content{
+    font-size:20px;
+    color:#d9d9d9;
+    margin-top:10px;
+}
+
+/* Form */
+
+.compose-card{
+    max-width:700px;
+    margin:auto;
+    margin-top:60px;
+    background:#111;
+    border:1px solid #222;
+    border-radius:20px;
+    padding:30px;
+}
+
+.form-control{
+    background:#1a1a1a;
+    border:1px solid #333;
+    color:white;
+}
+
+.form-control:focus{
+    background:#1a1a1a;
+    color:white;
+    border-color:#666;
+    box-shadow:none;
+}
+
+textarea{
+    resize:none;
+}
