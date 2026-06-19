@@ -7,13 +7,73 @@
 
 <link rel="stylesheet" href="/style.css">
 </head>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 <body>
-<nav class="navbar navbar-dark">
+<nav class="navbar navbar-expand-lg navbar-dark">
     <div class="container">
-        <h3 class="m-0 fw-bold"> Threads Posts</h3>
+
+        <a class="navbar-brand" href="/posts">
+            Threads
+        </a>
+
+        <div class="d-flex align-items-center gap-2">
+
+            <% if(currUser){ %>
+
+                <a href="/post/new" class="btn btn-primary">
+                    + New Post
+                </a>
+
+                <span class="text-light mx-2">
+                    @<%= currUser.username %>
+                </span>
+
+                <a href="/logout" class="btn btn-danger">
+                    Logout
+                </a>
+
+               
+            <% } else { %>
+
+                <a href="/signup" class="btn btn-outline-light">
+                    Sign Up
+                </a>
+
+                <a href="/login" class="btn btn-light">
+                    Login
+                </a>
+
+            <% } %>
+
+        </div>
+
     </div>
 </nav>
+
+<div class="feed">
+
+            <% if(success.length){ %>
+                <div class="alert alert-success alert-dismissible fade show">
+                    <%= success %>
+                    <button type="button"class="btn-close"data-bs-dismiss="alert">
+                    </button>
+                </div>
+            <% } %>
+</div>
+
+
+
+<div class="feed">
+
+            <% if(error.length){ %>
+                <div class="alert alert-danger alert-dismissible fade show ">
+                  <%= error %>
+                   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close">
+                   </button>
+                </div>
+
+            <% } %>
+</div>
 
 <div class="container mt-4 feed">
 
@@ -56,50 +116,7 @@
 
 </div>
 
-<a href="/post/new" class="btn btn-light new-post-btn">
-    New Post
-</a>
 
-<!-- <a href="/post/new"
-   class="btn btn-light floating-btn shadow">
-   Add new posts
-
-</a> -->
-
-
-    <!-- <button class="btn btn-danger">Test Bootstrap</button>
-     <nav class="navbar navbar-dark bg-dark">
-  <div class="container">
-    <a class="navbar-brand" href="/posts">Thread Posts</a>
-  </div>
-</nav>
-   
- 
-    <h1>Thread Post</h1> -->
-<!--     
-    <% for(post of posts) { %>
-        <div class="posts">
-            <h3 class="user"> @<%= post.username %> </h3>
-            <h4 class="content"> <%= post.content %> </h4>
-
-            <a href="http://localhost:8080/posts/<%= post.id %>/edit">Edit</a>
-            <br>
-            <a href="http://localhost:8080/posts/<%= post.id %>">see in detail</a>
-            
-
-                <form method="post" action="/posts/<%= post.id %>?_method=DELETE">
-                    <button>Delete</button>
-                </form>
-        </form>
-        </div>
-        
-    <%}%>
-    <br>
-   
-<a href="/post/new" class="btn btn-success mb-3">
-  Create New Post
-</a>
-    <a href="http://localhost:8080/post/new">Add New Post</a> --> 
     
 </body>
 </html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Mini Thread App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-card">
+
+            <h1 class="logo"> Thread App</h1>
+
+            <h2>Login </h2>
+
+            <form action="/login" method="POST">
+
+              <div class="mb-3">
+                <input type="text" name="username" placeholder="Username" required>
+              </div>
+
+
+              <div class="mb-3">
+                <input type="password" name="password" placeholder="password" required>
+              </div>
+                
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+            <p class="auth-link">
+                Create account?
+                <a href="/signup">Sign up</a>
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
