@@ -1,42 +1,38 @@
 # Mini Thread App
 
-A simple social media-inspired CRUD application built using Node.js, Express.js, MongoDB, and EJS. Users can create, view, edit, and delete posts in a clean Threads-style interface.
+A full-stack thread posting application built with Node.js, Express.js, MongoDB, and EJS. The application allows users to create and manage threads while providing secure authentication and user-friendly notifications.
 
 ## Features
 
-* Create new posts
-* View all posts
-* View individual post details
-* Edit existing posts
-* Delete posts
+* Create, edit, and delete threads
+* User registration and login system
+* Secure authentication using Passport.js
+* Session management with Express Session
+* Protected routes and authorization
+* Flash messages for authentication and action feedback
 * MongoDB database integration
-* Mongoose ODM for database operations
-* RESTful routing
-* Custom error handling using ExpressError
-* Async error handling using wrapAsync
-* Method Override for PATCH and DELETE requests
-* Responsive dark-themed UI
+* Server-side rendering with EJS
+* Responsive UI with Bootstrap
 
 ## Tech Stack
 
-### Backend
-
 * Node.js
 * Express.js
-
-### Database
-
 * MongoDB
 * Mongoose
-
-### Frontend
-
 * EJS
-* HTML5
-* CSS3
-* Bootstrap 5
+* Bootstrap
+* Passport.js
+* Passport Local
+* Express Session
+* Connect Flash
 
-### Other Packages
+## Authentication
 
-* Method Override
+The application uses Passport.js Local Strategy for user authentication. User sessions are maintained using Express Session, and Connect Flash is used to display success and error messages after actions such as login, logout, registration, thread creation, and deletion.
 
+
+
+## Author
+
+Asif Ali
